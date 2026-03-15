@@ -1,11 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #1B4332;
+  --color-primary: #1a421f;
   --color-accent: #40916C;
   --color-sage: #D8F3DC;
+  --color-accent-soft: #D8F3DC;
+  --color-background-light: #f6f8f6;
+  --color-background-dark: #151d16;
   --color-dark: #1A1A2E;
   --color-white: #FFFFFF;
 
   --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
+}
+
+.grid-pattern {
+  background-image: radial-gradient(circle, #1a421f 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.05;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-scroll-left {
+  animation: scroll-left 25s linear infinite;
+}
+
+.animate-scroll-left:hover {
+  animation-play-state: paused;
 }

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -22,9 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl" className={inter.className}>
-      <body className="bg-white text-dark antialiased">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-background-light font-display text-slate-900 antialiased">
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

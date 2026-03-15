@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacybeleid — NCDE",
-  description: "Het privacybeleid van Stichting NCDE.",
+  title: "Cookiebeleid — NCDE",
+  description: "Het cookiebeleid van Stichting NCDE.",
 };
 
-export default function PrivacyPage() {
+export default function CookiesPage() {
   return (
     <main className="mx-auto max-w-[1200px] px-6 py-12 md:px-10">
       {/* Hero Section */}
@@ -19,14 +19,14 @@ export default function PrivacyPage() {
             <span className="material-symbols-outlined text-[10px]">
               chevron_right
             </span>
-            <span>Privacybeleid</span>
+            <span>Cookiebeleid</span>
           </nav>
           <h1 className="mb-4 text-4xl font-black leading-none tracking-tighter text-slate-900 md:text-5xl">
-            Privacybeleid
+            Cookiebeleid
           </h1>
           <p className="text-lg leading-relaxed text-slate-600">
-            Hoe wij omgaan met uw persoonsgegevens en wat uw rechten zijn onder
-            de AVG (Algemene Verordening Gegevensbescherming).
+            Informatie over het gebruik van cookies en vergelijkbare technologieën
+            op de website van NCDE.
           </p>
         </div>
         <div className="flex flex-col items-start gap-3 md:items-end">
@@ -54,19 +54,19 @@ export default function PrivacyPage() {
             </Link>
             <Link
               href="/privacy"
-              className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 text-sm font-bold text-white shadow-md shadow-primary/20"
+              className="group flex items-center justify-between rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:bg-primary/5"
             >
               <span>Privacybeleid</span>
-              <span className="material-symbols-outlined text-[18px]">
+              <span className="material-symbols-outlined text-[18px] opacity-40 group-hover:opacity-100">
                 shield
               </span>
             </Link>
             <Link
               href="/cookies"
-              className="group flex items-center justify-between rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:bg-primary/5"
+              className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 text-sm font-bold text-white shadow-md shadow-primary/20"
             >
               <span>Cookieverklaring</span>
-              <span className="material-symbols-outlined text-[18px] opacity-40 group-hover:opacity-100">
+              <span className="material-symbols-outlined text-[18px]">
                 cookie
               </span>
             </Link>
@@ -85,25 +85,19 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-3 border-l-2 border-slate-200 text-xs font-semibold text-slate-500">
                 <li className="-ml-[2px] border-l-2 border-primary pl-4 text-primary">
-                  1. Verwerkingsverantwoordelijke
+                  1. Wat zijn cookies?
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  2. Welke gegevens verzamelen wij?
+                  2. Welke cookies gebruiken wij?
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  3. Doeleinden van verwerking
+                  3. Bewaartermijn
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  4. Bewaartermijn
+                  4. Cookies beheren of verwijderen
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  5. Delen met derden
-                </li>
-                <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  6. Uw rechten
-                </li>
-                <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  7. Beveiliging
+                  5. Wijzigingen
                 </li>
               </ul>
             </div>
@@ -114,7 +108,7 @@ export default function PrivacyPage() {
         <article className="flex-1 rounded-3xl border border-primary/5 bg-white p-8 shadow-sm md:p-12">
           <div className="max-w-none">
             <h2 className="mb-8 text-3xl font-black text-slate-900">
-              Privacybeleid NCDE
+              Cookieverklaring NCDE
             </h2>
             <div className="space-y-10 leading-relaxed text-slate-700">
               <section>
@@ -122,24 +116,17 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     1
                   </span>
-                  Verwerkingsverantwoordelijke
+                  Wat zijn cookies?
                 </h3>
-                <p className="mb-4">
-                  Stichting Nederlands Collectief Duurzame Energie (NCDE) is
-                  verantwoordelijk voor de verwerking van persoonsgegevens zoals
-                  weergegeven in dit privacybeleid. Onze contactgegevens zijn:
+                <p>
+                  Cookies zijn kleine tekstbestanden die bij het bezoek aan een
+                  website op uw computer, tablet of smartphone worden geplaatst.
+                  Met behulp van cookies kan informatie worden verzameld of
+                  opgeslagen over uw websitebezoek. Deze informatie kan
+                  betrekking hebben op u, uw voorkeuren of uw apparaat en wordt
+                  voornamelijk gebruikt om de site naar uw verwachtingen te laten
+                  werken.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>
-                    <strong>Organisatie:</strong> Stichting NCDE
-                  </li>
-                  <li>
-                    <strong>Adres:</strong> Den Haag, Nederland
-                  </li>
-                  <li>
-                    <strong>E-mail:</strong> info@ncde.nl
-                  </li>
-                </ul>
               </section>
 
               <section>
@@ -147,24 +134,53 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     2
                   </span>
-                  Welke gegevens verzamelen wij?
+                  Welke cookies gebruiken wij?
                 </h3>
                 <p className="mb-4">
-                  NCDE verwerkt uw persoonsgegevens doordat u gebruik maakt van
-                  onze diensten en/of omdat u deze zelf aan ons verstrekt.
-                  Hieronder vindt u een overzicht:
+                  NCDE maakt gebruik van de volgende categorieën cookies:
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>Voor- en achternaam</li>
-                  <li>E-mailadres</li>
-                  <li>Telefoonnummer</li>
-                  <li>Adresgegevens</li>
-                  <li>IP-adres en browsergegevens</li>
-                  <li>
-                    Overige persoonsgegevens die u actief verstrekt, bijvoorbeeld
-                    via correspondentie of het contactformulier
-                  </li>
-                </ul>
+                <div className="space-y-4">
+                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="material-symbols-outlined text-primary">
+                        check_circle
+                      </span>
+                      <p className="font-bold">Noodzakelijke cookies</p>
+                    </div>
+                    <p className="text-sm text-slate-600">
+                      Deze cookies zijn essentieel voor het functioneren van de
+                      website. Zonder deze cookies kan de website niet goed
+                      werken. Ze worden niet gebruikt voor marketingdoeleinden.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="material-symbols-outlined text-primary">
+                        analytics
+                      </span>
+                      <p className="font-bold">Analytische cookies</p>
+                    </div>
+                    <p className="text-sm text-slate-600">
+                      Met analytische cookies kunnen wij het gebruik van de
+                      website analyseren en de gebruikerservaring verbeteren. Wij
+                      gebruiken hiervoor een privacy-vriendelijke configuratie
+                      van Google Analytics.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="material-symbols-outlined text-primary">
+                        tune
+                      </span>
+                      <p className="font-bold">Functionele cookies</p>
+                    </div>
+                    <p className="text-sm text-slate-600">
+                      Functionele cookies onthouden uw voorkeuren en instellingen
+                      zodat u een betere ervaring heeft bij een volgend bezoek
+                      aan onze website.
+                    </p>
+                  </div>
+                </div>
               </section>
 
               <section>
@@ -172,30 +188,15 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     3
                   </span>
-                  Doeleinden van verwerking
+                  Bewaartermijn
                 </h3>
-                <p className="mb-4">
-                  NCDE verwerkt uw persoonsgegevens voor de volgende doelen:
+                <p>
+                  De bewaartermijn van cookies verschilt per type. Sessiecookies
+                  worden automatisch verwijderd zodra u uw browser sluit.
+                  Permanente cookies hebben een maximale bewaartermijn van 12
+                  maanden, tenzij u ze eerder verwijdert via uw
+                  browserinstellingen.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>
-                    Het afhandelen van uw aanvraag of contactverzoek
-                  </li>
-                  <li>
-                    U te informeren over wijzigingen in onze diensten en
-                    informatievoorziening
-                  </li>
-                  <li>
-                    Het verzenden van nieuwsbrieven en updates over de
-                    energietransitie
-                  </li>
-                  <li>
-                    Het verbeteren van onze website en dienstverlening
-                  </li>
-                  <li>
-                    Om te voldoen aan wettelijke verplichtingen
-                  </li>
-                </ul>
               </section>
 
               <section>
@@ -203,15 +204,18 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     4
                   </span>
-                  Bewaartermijn
+                  Cookies beheren of verwijderen
                 </h3>
-                <p>
-                  NCDE bewaart uw persoonsgegevens niet langer dan strikt nodig
-                  is om de doelen te realiseren waarvoor uw gegevens worden
-                  verzameld. Wij hanteren een bewaartermijn van maximaal 24
-                  maanden voor contactgegevens, tenzij wettelijke verplichtingen
-                  een langere bewaartermijn vereisen.
+                <p className="mb-4">
+                  U kunt uw cookievoorkeuren op elk moment wijzigen via uw
+                  browserinstellingen. Houd er rekening mee dat het uitschakelen
+                  van cookies de functionaliteit van onze website kan beïnvloeden.
                 </p>
+                <div className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 italic">
+                  &quot;U heeft altijd het recht om cookies te weigeren. Raadpleeg
+                  de helpfunctie van uw browser om te zien hoe u cookies kunt
+                  beheren of verwijderen.&quot;
+                </div>
               </section>
 
               <section>
@@ -219,53 +223,13 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     5
                   </span>
-                  Delen met derden
+                  Wijzigingen
                 </h3>
                 <p>
-                  NCDE deelt uw persoonsgegevens alleen met derden als dit nodig
-                  is voor de uitvoering van onze overeenkomst met u, of om te
-                  voldoen aan een wettelijke verplichting. Met bedrijven die uw
-                  gegevens verwerken in onze opdracht sluiten wij een
-                  verwerkersovereenkomst om te zorgen voor eenzelfde niveau van
-                  beveiliging en vertrouwelijkheid.
-                </p>
-              </section>
-
-              <section>
-                <h3 className="mb-4 flex items-center gap-3 text-xl font-bold text-primary">
-                  <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
-                    6
-                  </span>
-                  Uw rechten
-                </h3>
-                <p className="mb-4">
-                  U heeft het recht om uw persoonsgegevens in te zien, te
-                  corrigeren of te verwijderen. Daarnaast heeft u het recht om
-                  bezwaar te maken tegen de verwerking en het recht op
-                  gegevensoverdraagbaarheid.
-                </p>
-                <div className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 italic">
-                  &quot;U kunt een verzoek tot inzage, correctie, verwijdering of
-                  overdracht van uw persoonsgegevens sturen naar info@ncde.nl.
-                  Wij reageren zo snel mogelijk, maar uiterlijk binnen vier
-                  weken.&quot;
-                </div>
-              </section>
-
-              <section>
-                <h3 className="mb-4 flex items-center gap-3 text-xl font-bold text-primary">
-                  <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
-                    7
-                  </span>
-                  Beveiliging
-                </h3>
-                <p>
-                  NCDE neemt de bescherming van uw gegevens serieus en neemt
-                  passende maatregelen om misbruik, verlies, onbevoegde toegang,
-                  ongewenste openbaarmaking en ongeoorloofde wijziging tegen te
-                  gaan. Als u de indruk heeft dat uw gegevens niet goed beveiligd
-                  zijn of er aanwijzingen zijn van misbruik, neem dan contact met
-                  ons op via info@ncde.nl.
+                  NCDE kan dit cookiebeleid van tijd tot tijd aanpassen. De meest
+                  actuele versie van het cookiebeleid is altijd beschikbaar op
+                  onze website. Wij raden u aan dit beleid regelmatig te
+                  raadplegen zodat u op de hoogte bent van eventuele wijzigingen.
                 </p>
               </section>
             </div>
@@ -276,12 +240,12 @@ export default function PrivacyPage() {
                   verified_user
                 </span>
                 <p className="text-xs font-semibold">
-                  Conform AVG / GDPR wetgeving
+                  Conform AVG / ePrivacy richtlijn
                 </p>
               </div>
               <div className="flex gap-4">
                 <p className="text-xs text-slate-400">
-                  Vragen over uw privacy?
+                  Vragen over cookies?
                 </p>
                 <Link
                   href="/contact"

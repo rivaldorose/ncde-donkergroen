@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacybeleid — NCDE",
-  description: "Het privacybeleid van Stichting NCDE.",
+  title: "Disclaimer — NCDE",
+  description: "Disclaimer van Stichting NCDE.",
 };
 
-export default function PrivacyPage() {
+export default function DisclaimerPage() {
   return (
     <main className="mx-auto max-w-[1200px] px-6 py-12 md:px-10">
       {/* Hero Section */}
@@ -19,14 +19,14 @@ export default function PrivacyPage() {
             <span className="material-symbols-outlined text-[10px]">
               chevron_right
             </span>
-            <span>Privacybeleid</span>
+            <span>Disclaimer</span>
           </nav>
           <h1 className="mb-4 text-4xl font-black leading-none tracking-tighter text-slate-900 md:text-5xl">
-            Privacybeleid
+            Disclaimer
           </h1>
           <p className="text-lg leading-relaxed text-slate-600">
-            Hoe wij omgaan met uw persoonsgegevens en wat uw rechten zijn onder
-            de AVG (Algemene Verordening Gegevensbescherming).
+            Belangrijke juridische informatie over het gebruik van de NCDE
+            website en de daarop aangeboden informatie.
           </p>
         </div>
         <div className="flex flex-col items-start gap-3 md:items-end">
@@ -54,10 +54,10 @@ export default function PrivacyPage() {
             </Link>
             <Link
               href="/privacy"
-              className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 text-sm font-bold text-white shadow-md shadow-primary/20"
+              className="group flex items-center justify-between rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:bg-primary/5"
             >
               <span>Privacybeleid</span>
-              <span className="material-symbols-outlined text-[18px]">
+              <span className="material-symbols-outlined text-[18px] opacity-40 group-hover:opacity-100">
                 shield
               </span>
             </Link>
@@ -72,10 +72,10 @@ export default function PrivacyPage() {
             </Link>
             <Link
               href="/disclaimer"
-              className="group flex items-center justify-between rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:bg-primary/5"
+              className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 text-sm font-bold text-white shadow-md shadow-primary/20"
             >
               <span>Disclaimer</span>
-              <span className="material-symbols-outlined text-[18px] opacity-40 group-hover:opacity-100">
+              <span className="material-symbols-outlined text-[18px]">
                 gavel
               </span>
             </Link>
@@ -85,25 +85,22 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-3 border-l-2 border-slate-200 text-xs font-semibold text-slate-500">
                 <li className="-ml-[2px] border-l-2 border-primary pl-4 text-primary">
-                  1. Verwerkingsverantwoordelijke
+                  1. Algemeen
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  2. Welke gegevens verzamelen wij?
+                  2. Geen professioneel advies
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  3. Doeleinden van verwerking
+                  3. Aansprakelijkheid
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  4. Bewaartermijn
+                  4. Links naar derden
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  5. Delen met derden
+                  5. Intellectueel eigendom
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  6. Uw rechten
-                </li>
-                <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  7. Beveiliging
+                  6. Toepasselijk recht
                 </li>
               </ul>
             </div>
@@ -114,7 +111,7 @@ export default function PrivacyPage() {
         <article className="flex-1 rounded-3xl border border-primary/5 bg-white p-8 shadow-sm md:p-12">
           <div className="max-w-none">
             <h2 className="mb-8 text-3xl font-black text-slate-900">
-              Privacybeleid NCDE
+              Disclaimer NCDE
             </h2>
             <div className="space-y-10 leading-relaxed text-slate-700">
               <section>
@@ -122,24 +119,17 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     1
                   </span>
-                  Verwerkingsverantwoordelijke
+                  Algemeen
                 </h3>
-                <p className="mb-4">
-                  Stichting Nederlands Collectief Duurzame Energie (NCDE) is
-                  verantwoordelijk voor de verwerking van persoonsgegevens zoals
-                  weergegeven in dit privacybeleid. Onze contactgegevens zijn:
+                <p>
+                  De informatie op de website van Stichting Nederlands Collectief
+                  Duurzame Energie (NCDE) is bedoeld als algemene informatie over
+                  de energietransitie, regelgeving en duurzame
+                  energieoplossingen. Hoewel NCDE grote zorgvuldigheid betracht
+                  bij het samenstellen van de inhoud van deze website, kan NCDE
+                  niet garanderen dat de informatie altijd volledig, juist of
+                  actueel is.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>
-                    <strong>Organisatie:</strong> Stichting NCDE
-                  </li>
-                  <li>
-                    <strong>Adres:</strong> Den Haag, Nederland
-                  </li>
-                  <li>
-                    <strong>E-mail:</strong> info@ncde.nl
-                  </li>
-                </ul>
               </section>
 
               <section>
@@ -147,24 +137,19 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     2
                   </span>
-                  Welke gegevens verzamelen wij?
+                  Geen professioneel advies
                 </h3>
                 <p className="mb-4">
-                  NCDE verwerkt uw persoonsgegevens doordat u gebruik maakt van
-                  onze diensten en/of omdat u deze zelf aan ons verstrekt.
-                  Hieronder vindt u een overzicht:
+                  De informatie op deze website is uitsluitend bedoeld als
+                  algemene informatie en vormt geen professioneel advies. Voor
+                  specifieke vragen of situaties raden wij u aan contact op te
+                  nemen met een gekwalificeerde adviseur.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>Voor- en achternaam</li>
-                  <li>E-mailadres</li>
-                  <li>Telefoonnummer</li>
-                  <li>Adresgegevens</li>
-                  <li>IP-adres en browsergegevens</li>
-                  <li>
-                    Overige persoonsgegevens die u actief verstrekt, bijvoorbeeld
-                    via correspondentie of het contactformulier
-                  </li>
-                </ul>
+                <div className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 italic">
+                  &quot;NCDE aanvaardt geen aansprakelijkheid voor schade die
+                  voortvloeit uit het gebruik van informatie op deze website
+                  zonder voorafgaand deskundig advies.&quot;
+                </div>
               </section>
 
               <section>
@@ -172,30 +157,17 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     3
                   </span>
-                  Doeleinden van verwerking
+                  Aansprakelijkheid
                 </h3>
-                <p className="mb-4">
-                  NCDE verwerkt uw persoonsgegevens voor de volgende doelen:
+                <p>
+                  NCDE sluit alle aansprakelijkheid uit voor enigerlei directe of
+                  indirecte schade, van welke aard dan ook, die voortvloeit uit
+                  of in enig opzicht verband houdt met het gebruik van de website,
+                  de (on)bereikbaarheid van de website, of informatie die op of
+                  via de website wordt aangeboden. Dit geldt ook voor schade
+                  veroorzaakt door virussen of onjuistheden of onvolledigheden in
+                  de informatie.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>
-                    Het afhandelen van uw aanvraag of contactverzoek
-                  </li>
-                  <li>
-                    U te informeren over wijzigingen in onze diensten en
-                    informatievoorziening
-                  </li>
-                  <li>
-                    Het verzenden van nieuwsbrieven en updates over de
-                    energietransitie
-                  </li>
-                  <li>
-                    Het verbeteren van onze website en dienstverlening
-                  </li>
-                  <li>
-                    Om te voldoen aan wettelijke verplichtingen
-                  </li>
-                </ul>
               </section>
 
               <section>
@@ -203,14 +175,15 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     4
                   </span>
-                  Bewaartermijn
+                  Links naar derden
                 </h3>
                 <p>
-                  NCDE bewaart uw persoonsgegevens niet langer dan strikt nodig
-                  is om de doelen te realiseren waarvoor uw gegevens worden
-                  verzameld. Wij hanteren een bewaartermijn van maximaal 24
-                  maanden voor contactgegevens, tenzij wettelijke verplichtingen
-                  een langere bewaartermijn vereisen.
+                  De website van NCDE kan links bevatten naar websites van
+                  derden. NCDE heeft geen invloed op de inhoud van deze websites
+                  en is niet verantwoordelijk voor de inhoud, het privacybeleid
+                  of de werkwijze van deze websites. Het plaatsen van links naar
+                  externe websites houdt geen aanbeveling van de inhoud van die
+                  websites in.
                 </p>
               </section>
 
@@ -219,15 +192,16 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     5
                   </span>
-                  Delen met derden
+                  Intellectueel eigendom
                 </h3>
                 <p>
-                  NCDE deelt uw persoonsgegevens alleen met derden als dit nodig
-                  is voor de uitvoering van onze overeenkomst met u, of om te
-                  voldoen aan een wettelijke verplichting. Met bedrijven die uw
-                  gegevens verwerken in onze opdracht sluiten wij een
-                  verwerkersovereenkomst om te zorgen voor eenzelfde niveau van
-                  beveiliging en vertrouwelijkheid.
+                  Alle rechten van intellectueel eigendom met betrekking tot de
+                  inhoud van deze website — waaronder teksten, afbeeldingen,
+                  logo&apos;s, illustraties en vormgeving — berusten bij NCDE of
+                  haar licentiegevers. Het is niet toegestaan om zonder
+                  voorafgaande schriftelijke toestemming van NCDE informatie van
+                  de website te kopiëren, te verspreiden of op een andere wijze
+                  te gebruiken voor commerciële doeleinden.
                 </p>
               </section>
 
@@ -236,36 +210,13 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     6
                   </span>
-                  Uw rechten
-                </h3>
-                <p className="mb-4">
-                  U heeft het recht om uw persoonsgegevens in te zien, te
-                  corrigeren of te verwijderen. Daarnaast heeft u het recht om
-                  bezwaar te maken tegen de verwerking en het recht op
-                  gegevensoverdraagbaarheid.
-                </p>
-                <div className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 italic">
-                  &quot;U kunt een verzoek tot inzage, correctie, verwijdering of
-                  overdracht van uw persoonsgegevens sturen naar info@ncde.nl.
-                  Wij reageren zo snel mogelijk, maar uiterlijk binnen vier
-                  weken.&quot;
-                </div>
-              </section>
-
-              <section>
-                <h3 className="mb-4 flex items-center gap-3 text-xl font-bold text-primary">
-                  <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
-                    7
-                  </span>
-                  Beveiliging
+                  Toepasselijk recht
                 </h3>
                 <p>
-                  NCDE neemt de bescherming van uw gegevens serieus en neemt
-                  passende maatregelen om misbruik, verlies, onbevoegde toegang,
-                  ongewenste openbaarmaking en ongeoorloofde wijziging tegen te
-                  gaan. Als u de indruk heeft dat uw gegevens niet goed beveiligd
-                  zijn of er aanwijzingen zijn van misbruik, neem dan contact met
-                  ons op via info@ncde.nl.
+                  Op deze disclaimer en het gebruik van de website is uitsluitend
+                  Nederlands recht van toepassing. Alle geschillen die
+                  voortvloeien uit of verband houden met deze disclaimer zullen
+                  worden voorgelegd aan de bevoegde rechter te Den Haag.
                 </p>
               </section>
             </div>
@@ -276,12 +227,12 @@ export default function PrivacyPage() {
                   verified_user
                 </span>
                 <p className="text-xs font-semibold">
-                  Conform AVG / GDPR wetgeving
+                  Nederlands recht van toepassing
                 </p>
               </div>
               <div className="flex gap-4">
                 <p className="text-xs text-slate-400">
-                  Vragen over uw privacy?
+                  Vragen over deze disclaimer?
                 </p>
                 <Link
                   href="/contact"

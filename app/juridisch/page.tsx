@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacybeleid — NCDE",
-  description: "Het privacybeleid van Stichting NCDE.",
+  title: "Juridische Informatie — NCDE",
+  description:
+    "Algemene voorwaarden, privacybeleid en cookieverklaring van Stichting NCDE.",
 };
 
-export default function PrivacyPage() {
+export default function JuridischPage() {
   return (
     <main className="mx-auto max-w-[1200px] px-6 py-12 md:px-10">
       {/* Hero Section */}
@@ -19,20 +20,34 @@ export default function PrivacyPage() {
             <span className="material-symbols-outlined text-[10px]">
               chevron_right
             </span>
-            <span>Privacybeleid</span>
+            <span>Juridisch</span>
           </nav>
           <h1 className="mb-4 text-4xl font-black leading-none tracking-tighter text-slate-900 md:text-5xl">
-            Privacybeleid
+            Juridische Informatie
           </h1>
           <p className="text-lg leading-relaxed text-slate-600">
-            Hoe wij omgaan met uw persoonsgegevens en wat uw rechten zijn onder
-            de AVG (Algemene Verordening Gegevensbescherming).
+            Onze inzet voor transparantie, veiligheid en wederzijds vertrouwen.
+            Bekijk onze voorwaarden en hoe we met uw gegevens omgaan.
           </p>
         </div>
         <div className="flex flex-col items-start gap-3 md:items-end">
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-500">
             Laatst bijgewerkt: 15 maart 2026
           </span>
+          <div className="flex gap-3">
+            <button className="flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-2 text-sm font-bold text-primary transition-all hover:bg-primary/20">
+              <span className="material-symbols-outlined text-[20px]">
+                print
+              </span>
+              Printen
+            </button>
+            <button className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white transition-all hover:shadow-lg">
+              <span className="material-symbols-outlined text-[20px]">
+                download
+              </span>
+              Download PDF
+            </button>
+          </div>
         </div>
       </div>
 
@@ -45,19 +60,19 @@ export default function PrivacyPage() {
             </p>
             <Link
               href="/juridisch"
-              className="group flex items-center justify-between rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:bg-primary/5"
+              className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 font-bold text-sm text-white shadow-md shadow-primary/20"
             >
               <span>Algemene Voorwaarden</span>
-              <span className="material-symbols-outlined text-[18px] opacity-40 group-hover:opacity-100">
+              <span className="material-symbols-outlined text-[18px]">
                 description
               </span>
             </Link>
             <Link
               href="/privacy"
-              className="flex items-center justify-between rounded-xl bg-primary px-4 py-3 text-sm font-bold text-white shadow-md shadow-primary/20"
+              className="group flex items-center justify-between rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:bg-primary/5"
             >
               <span>Privacybeleid</span>
-              <span className="material-symbols-outlined text-[18px]">
+              <span className="material-symbols-outlined text-[18px] opacity-40 group-hover:opacity-100">
                 shield
               </span>
             </Link>
@@ -85,25 +100,22 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-3 border-l-2 border-slate-200 text-xs font-semibold text-slate-500">
                 <li className="-ml-[2px] border-l-2 border-primary pl-4 text-primary">
-                  1. Verwerkingsverantwoordelijke
+                  1. Definities
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  2. Welke gegevens verzamelen wij?
+                  2. Toepasselijkheid
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  3. Doeleinden van verwerking
+                  3. Het Aanbod
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  4. Bewaartermijn
+                  4. De Overeenkomst
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  5. Delen met derden
+                  5. Tarieven en Betaling
                 </li>
                 <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  6. Uw rechten
-                </li>
-                <li className="cursor-pointer pl-4 transition-colors hover:text-primary">
-                  7. Beveiliging
+                  6. Aansprakelijkheid
                 </li>
               </ul>
             </div>
@@ -114,7 +126,7 @@ export default function PrivacyPage() {
         <article className="flex-1 rounded-3xl border border-primary/5 bg-white p-8 shadow-sm md:p-12">
           <div className="max-w-none">
             <h2 className="mb-8 text-3xl font-black text-slate-900">
-              Privacybeleid NCDE
+              Algemene Voorwaarden NCDE
             </h2>
             <div className="space-y-10 leading-relaxed text-slate-700">
               <section>
@@ -122,22 +134,26 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     1
                   </span>
-                  Verwerkingsverantwoordelijke
+                  Definities
                 </h3>
                 <p className="mb-4">
-                  Stichting Nederlands Collectief Duurzame Energie (NCDE) is
-                  verantwoordelijk voor de verwerking van persoonsgegevens zoals
-                  weergegeven in dit privacybeleid. Onze contactgegevens zijn:
+                  In deze algemene voorwaarden worden de volgende termen in de
+                  navolgende betekenis gebruikt, tenzij uitdrukkelijk anders is
+                  aangegeven:
                 </p>
                 <ul className="list-disc space-y-2 pl-5 marker:text-primary">
                   <li>
-                    <strong>Organisatie:</strong> Stichting NCDE
+                    <strong>NCDE:</strong> De gebruiker van deze algemene
+                    voorwaarden, gevestigd te Amsterdam.
                   </li>
                   <li>
-                    <strong>Adres:</strong> Den Haag, Nederland
+                    <strong>Opdrachtgever:</strong> De natuurlijke persoon of
+                    rechtspersoon die met NCDE een overeenkomst aangaat.
                   </li>
                   <li>
-                    <strong>E-mail:</strong> info@ncde.nl
+                    <strong>Overeenkomst:</strong> De tussen NCDE en
+                    Opdrachtgever gesloten overeenkomst met betrekking tot de
+                    levering van diensten.
                   </li>
                 </ul>
               </section>
@@ -147,24 +163,20 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     2
                   </span>
-                  Welke gegevens verzamelen wij?
+                  Toepasselijkheid
                 </h3>
                 <p className="mb-4">
-                  NCDE verwerkt uw persoonsgegevens doordat u gebruik maakt van
-                  onze diensten en/of omdat u deze zelf aan ons verstrekt.
-                  Hieronder vindt u een overzicht:
+                  Deze voorwaarden zijn van toepassing op alle aanbiedingen,
+                  offertes, werkzaamheden, bestellingen, overeenkomsten en
+                  leveringen van diensten of producten door of namens NCDE.
+                  Afwijkingen van deze voorwaarden zijn slechts geldig indien
+                  deze uitdrukkelijk schriftelijk zijn overeengekomen.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>Voor- en achternaam</li>
-                  <li>E-mailadres</li>
-                  <li>Telefoonnummer</li>
-                  <li>Adresgegevens</li>
-                  <li>IP-adres en browsergegevens</li>
-                  <li>
-                    Overige persoonsgegevens die u actief verstrekt, bijvoorbeeld
-                    via correspondentie of het contactformulier
-                  </li>
-                </ul>
+                <p>
+                  De toepasselijkheid van eventuele inkoop- of andere voorwaarden
+                  van de Opdrachtgever wordt uitdrukkelijk van de hand gewezen,
+                  tenzij schriftelijk anders is overeengekomen.
+                </p>
               </section>
 
               <section>
@@ -172,30 +184,19 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     3
                   </span>
-                  Doeleinden van verwerking
+                  Het Aanbod
                 </h3>
                 <p className="mb-4">
-                  NCDE verwerkt uw persoonsgegevens voor de volgende doelen:
+                  Indien een aanbod een beperkte geldigheidsduur heeft of onder
+                  voorwaarden geschiedt, wordt dit nadrukkelijk in het aanbod
+                  vermeld. Het aanbod bevat een volledige en nauwkeurige
+                  omschrijving van de aangeboden diensten.
                 </p>
-                <ul className="list-disc space-y-2 pl-5 marker:text-primary">
-                  <li>
-                    Het afhandelen van uw aanvraag of contactverzoek
-                  </li>
-                  <li>
-                    U te informeren over wijzigingen in onze diensten en
-                    informatievoorziening
-                  </li>
-                  <li>
-                    Het verzenden van nieuwsbrieven en updates over de
-                    energietransitie
-                  </li>
-                  <li>
-                    Het verbeteren van onze website en dienstverlening
-                  </li>
-                  <li>
-                    Om te voldoen aan wettelijke verplichtingen
-                  </li>
-                </ul>
+                <div className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 italic">
+                  &quot;NCDE is niet gebonden aan kennelijke vergissingen of
+                  fouten in het aanbod. Elk aanbod is vrijblijvend, tenzij
+                  uitdrukkelijk anders vermeld.&quot;
+                </div>
               </section>
 
               <section>
@@ -203,14 +204,14 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     4
                   </span>
-                  Bewaartermijn
+                  De Overeenkomst
                 </h3>
                 <p>
-                  NCDE bewaart uw persoonsgegevens niet langer dan strikt nodig
-                  is om de doelen te realiseren waarvoor uw gegevens worden
-                  verzameld. Wij hanteren een bewaartermijn van maximaal 24
-                  maanden voor contactgegevens, tenzij wettelijke verplichtingen
-                  een langere bewaartermijn vereisen.
+                  De overeenkomst komt tot stand op het moment van aanvaarding
+                  door de Opdrachtgever van het aanbod en het voldoen aan de
+                  daarbij gestelde voorwaarden. NCDE bevestigt onverwijld langs
+                  elektronische weg de ontvangst van de aanvaarding van het
+                  aanbod.
                 </p>
               </section>
 
@@ -219,53 +220,13 @@ export default function PrivacyPage() {
                   <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
                     5
                   </span>
-                  Delen met derden
-                </h3>
-                <p>
-                  NCDE deelt uw persoonsgegevens alleen met derden als dit nodig
-                  is voor de uitvoering van onze overeenkomst met u, of om te
-                  voldoen aan een wettelijke verplichting. Met bedrijven die uw
-                  gegevens verwerken in onze opdracht sluiten wij een
-                  verwerkersovereenkomst om te zorgen voor eenzelfde niveau van
-                  beveiliging en vertrouwelijkheid.
-                </p>
-              </section>
-
-              <section>
-                <h3 className="mb-4 flex items-center gap-3 text-xl font-bold text-primary">
-                  <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
-                    6
-                  </span>
-                  Uw rechten
+                  Tarieven en Betaling
                 </h3>
                 <p className="mb-4">
-                  U heeft het recht om uw persoonsgegevens in te zien, te
-                  corrigeren of te verwijderen. Daarnaast heeft u het recht om
-                  bezwaar te maken tegen de verwerking en het recht op
-                  gegevensoverdraagbaarheid.
-                </p>
-                <div className="rounded-2xl border-l-4 border-primary bg-primary/5 p-6 italic">
-                  &quot;U kunt een verzoek tot inzage, correctie, verwijdering of
-                  overdracht van uw persoonsgegevens sturen naar info@ncde.nl.
-                  Wij reageren zo snel mogelijk, maar uiterlijk binnen vier
-                  weken.&quot;
-                </div>
-              </section>
-
-              <section>
-                <h3 className="mb-4 flex items-center gap-3 text-xl font-bold text-primary">
-                  <span className="flex size-8 items-center justify-center rounded-lg bg-primary/10 text-sm font-black text-primary">
-                    7
-                  </span>
-                  Beveiliging
-                </h3>
-                <p>
-                  NCDE neemt de bescherming van uw gegevens serieus en neemt
-                  passende maatregelen om misbruik, verlies, onbevoegde toegang,
-                  ongewenste openbaarmaking en ongeoorloofde wijziging tegen te
-                  gaan. Als u de indruk heeft dat uw gegevens niet goed beveiligd
-                  zijn of er aanwijzingen zijn van misbruik, neem dan contact met
-                  ons op via info@ncde.nl.
+                  Alle genoemde prijzen zijn exclusief BTW en andere heffingen
+                  van overheidswege, tenzij anders aangegeven. Betaling dient te
+                  geschieden binnen 14 dagen na factuurdatum, op een door NCDE
+                  aan te geven wijze in de valuta waarin is gefactureerd.
                 </p>
               </section>
             </div>
@@ -276,18 +237,18 @@ export default function PrivacyPage() {
                   verified_user
                 </span>
                 <p className="text-xs font-semibold">
-                  Conform AVG / GDPR wetgeving
+                  Gecertificeerd conform EU-wetgeving 2024
                 </p>
               </div>
               <div className="flex gap-4">
                 <p className="text-xs text-slate-400">
-                  Vragen over uw privacy?
+                  Vragen over onze voorwaarden?
                 </p>
                 <Link
                   href="/contact"
                   className="text-xs font-bold text-primary underline underline-offset-4"
                 >
-                  Neem contact op
+                  Contacteer Legal Team
                 </Link>
               </div>
             </div>
