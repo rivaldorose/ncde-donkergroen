@@ -7,6 +7,7 @@ const navItems = [
   { href: "/salderingsregeling", label: "Salderingsregeling" },
   { href: "/noodpakket", label: "Noodpakket" },
   { href: "/oplossingen", label: "Oplossingen" },
+  { href: "/regelingen", label: "Regelingen" },
   { href: "/partners", label: "Partners" },
 ];
 
@@ -18,22 +19,12 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="text-primary">
-              <span
-                className="material-symbols-outlined text-4xl"
-                style={{ fontVariationSettings: "'FILL' 1" }}
-              >
-                eco
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold uppercase leading-none tracking-tight text-primary">
-                NCDE
-              </span>
-              <span className="text-[10px] font-medium uppercase tracking-widest text-primary/70">
-                Nederlands Collectief
-              </span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo/normaal logo.png"
+              alt="NCDE Logo"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}

@@ -279,7 +279,12 @@ export default function NoodpakketPage() {
                   herstelpunten.
                 </p>
               </div>
-              <div className="h-full w-full bg-slate-200"></div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/noodplan.jpg"
+                alt="Noodvoorzieningen energie"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>

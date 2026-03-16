@@ -49,7 +49,7 @@ export default function ThuisbatterijenPage() {
                 Bereken uw voordeel
               </Link>
               <Link
-                href="/oplossingen"
+                href="/regelingen"
                 className="rounded-lg border border-slate-200 bg-white px-8 py-4 font-bold transition-all hover:bg-slate-50"
               >
                 Bekijk modellen
@@ -57,11 +57,12 @@ export default function ThuisbatterijenPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-2xl shadow-2xl">
-            <div className="flex aspect-[4/3] w-full items-center justify-center bg-slate-200">
-              <span className="material-symbols-outlined text-[120px] text-slate-300">
-                battery_charging_full
-              </span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/6a2fe05d-3e79-487b-857b-02a335bf404d.jpg"
+              alt="Thuisbatterij systeem"
+              className="aspect-[4/3] w-full object-cover"
+            />
           </div>
         </div>
       </section>

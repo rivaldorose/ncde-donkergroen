@@ -36,7 +36,7 @@ export default function HomePage() {
                 Meer informatie
               </Link>
               <Link
-                href="/oplossingen"
+                href="/regelingen"
                 className="rounded-lg border border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20"
               >
                 Bekijk regelingen
@@ -195,11 +195,13 @@ export default function HomePage() {
                 Bekijk noodplan
               </Link>
             </div>
-            <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-12 lg:w-1/2">
-              <div className="grid-pattern absolute inset-0 opacity-10"></div>
-              <span className="material-symbols-outlined text-[160px] text-white/20">
-                safety_check
-              </span>
+            <div className="relative aspect-square w-full overflow-hidden rounded-2xl lg:w-1/2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/noodplan.jpg"
+                alt="Noodplan voorbereidingen"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -230,10 +232,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm">
-              <div
-                className="h-48 bg-slate-200"
-                data-alt="High tech solar panels on modern roof"
-              ></div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="h-48 w-full object-cover"
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop"
+                alt="Zonnepanelen op een modern dak"
+              />
               <div className="flex flex-1 flex-col p-8">
                 <h3 className="mb-3 text-xl font-bold">Zonnepanelen</h3>
                 <p className="mb-6 text-sm leading-relaxed text-slate-600">
@@ -253,10 +257,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm">
-              <div
-                className="h-48 bg-slate-200"
-                data-alt="Residential home battery energy storage system"
-              ></div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="h-48 w-full object-cover"
+                src="/images/6a2fe05d-3e79-487b-857b-02a335bf404d.jpg"
+                alt="Thuisbatterij energieopslagsysteem"
+              />
               <div className="flex flex-1 flex-col p-8">
                 <h3 className="mb-3 text-xl font-bold">Thuisbatterijen</h3>
                 <p className="mb-6 text-sm leading-relaxed text-slate-600">
@@ -265,7 +271,7 @@ export default function HomePage() {
                   tarieven.
                 </p>
                 <Link
-                  href="/oplossingen/thuisbatterijen"
+                  href="/regelingen/thuisbatterijen"
                   className="mt-auto flex items-center gap-2 text-sm font-bold text-primary hover:underline"
                 >
                   Meer informatie{" "}
@@ -276,10 +282,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm">
-              <div
-                className="h-48 bg-slate-200"
-                data-alt="Modern heat pump unit outside residential building"
-              ></div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="h-48 w-full object-cover"
+                src="/images/warmte pomp.jpg"
+                alt="Warmtepomp naast een woning"
+              />
               <div className="flex flex-1 flex-col p-8">
                 <h3 className="mb-3 text-xl font-bold">Warmtepompen</h3>
                 <p className="mb-6 text-sm leading-relaxed text-slate-600">
@@ -287,7 +295,7 @@ export default function HomePage() {
                   elektrische systemen voor elk type woning en isolatiegraad.
                 </p>
                 <Link
-                  href="/oplossingen"
+                  href="/oplossingen/warmtepompen"
                   className="mt-auto flex items-center gap-2 text-sm font-bold text-primary hover:underline"
                 >
                   Meer informatie{" "}
@@ -301,52 +309,63 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Onze Partners */}
+      {/* Wie zijn wij */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary">
-              Onze Partners
-            </h2>
-            <p className="mx-auto max-w-2xl text-slate-600">
-              Wij werken uitsluitend samen met gecertificeerde
-              installatiepartners die voldoen aan de strengste kwaliteitseisen.
-            </p>
-            <p className="mt-4 font-semibold text-primary">
-              Onze hoofdpartner:{" "}
+          <div className="flex flex-col items-center gap-16 lg:flex-row">
+            <div className="lg:w-1/2">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+                <span className="material-symbols-outlined text-sm">
+                  info
+                </span>{" "}
+                Over NCDE
+              </div>
+              <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+                Wie zijn wij
+              </h2>
+              <p className="mb-6 text-lg leading-relaxed text-neutral-600">
+                Het Nederlands Collectief Duurzame Energie zet zich in voor een
+                eerlijke, transparante en toegankelijke energietransitie. Wij
+                informeren burgers, gemeenten en bedrijven met onafhankelijke en
+                betrouwbare kennis.
+              </p>
+              <ul className="mb-10 space-y-4">
+                <li className="flex items-center gap-3 text-neutral-700">
+                  <span className="material-symbols-outlined text-accent">
+                    check_circle
+                  </span>
+                  <span>Onafhankelijk &amp; niet-commercieel</span>
+                </li>
+                <li className="flex items-center gap-3 text-neutral-700">
+                  <span className="material-symbols-outlined text-accent">
+                    check_circle
+                  </span>
+                  <span>Gebaseerd op offici&euml;le overheidsrichtlijnen</span>
+                </li>
+                <li className="flex items-center gap-3 text-neutral-700">
+                  <span className="material-symbols-outlined text-accent">
+                    check_circle
+                  </span>
+                  <span>Samenwerking met gecertificeerde partners</span>
+                </li>
+              </ul>
               <Link
-                href="/partners"
-                className="underline decoration-primary/30 transition-all hover:decoration-primary"
+                href="/over"
+                className="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-0.5"
               >
-                Alterion
+                Meer over NCDE
+                <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
-            <div
-              className="flex aspect-[3/2] items-center justify-center rounded bg-slate-100 p-6"
-              data-alt="Partner logo 1"
-            ></div>
-            <div
-              className="flex aspect-[3/2] items-center justify-center rounded bg-slate-100 p-6"
-              data-alt="Partner logo 2"
-            ></div>
-            <div
-              className="flex aspect-[3/2] items-center justify-center rounded bg-slate-100 p-6"
-              data-alt="Partner logo 3"
-            ></div>
-            <div
-              className="flex aspect-[3/2] items-center justify-center rounded bg-slate-100 p-6"
-              data-alt="Partner logo 4"
-            ></div>
-            <div
-              className="flex aspect-[3/2] items-center justify-center rounded bg-slate-100 p-6"
-              data-alt="Partner logo 5"
-            ></div>
-            <div
-              className="flex aspect-[3/2] items-center justify-center rounded bg-slate-100 p-6"
-              data-alt="Partner logo 6"
-            ></div>
+            </div>
+            <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-2xl lg:w-1/2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&h=800&fit=crop"
+                alt="Duurzame energie windmolens in Nederland"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+            </div>
           </div>
         </div>
       </section>

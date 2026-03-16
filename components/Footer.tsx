@@ -7,17 +7,12 @@ export default function Footer() {
         <div className="mb-16 grid grid-cols-1 gap-12 border-b border-white/10 pb-16 md:grid-cols-2 lg:grid-cols-4">
           {/* Kolom 1: Over */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <span className="material-symbols-outlined text-3xl">eco</span>
-              <div className="flex flex-col">
-                <span className="text-lg font-extrabold uppercase leading-none tracking-tight">
-                  NCDE
-                </span>
-                <span className="text-[8px] font-medium uppercase tracking-widest text-white/70">
-                  Nederlands Collectief
-                </span>
-              </div>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo/wit.png"
+              alt="NCDE Logo"
+              className="h-12 w-auto"
+            />
             <p className="text-sm leading-relaxed text-white/70">
               Stichting Nederlands Collectief Duurzame Energie is een
               onafhankelijk orgaan gericht op het informeren van burgers over de
@@ -59,6 +54,14 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-white/70">
               <li>
                 <Link
+                  href="/over"
+                  className="transition-colors hover:text-white"
+                >
+                  Over NCDE
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/salderingsregeling"
                   className="transition-colors hover:text-white"
                 >
@@ -79,6 +82,30 @@ export default function Footer() {
                   className="transition-colors hover:text-white"
                 >
                   Oplossingen
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/regelingen"
+                  className="transition-colors hover:text-white"
+                >
+                  Regelingen
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/werkwijze"
+                  className="transition-colors hover:text-white"
+                >
+                  Onze Werkwijze
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/partners"
+                  className="transition-colors hover:text-white"
+                >
+                  Partners
                 </Link>
               </li>
               <li>
@@ -129,10 +156,15 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Nederlands Collectief Duurzame
             Energie (NCDE). Alle rechten voorbehouden.
           </p>
-          <p className="italic text-white/30">
-            Alterion, gecertificeerd installatiepartner, neemt contact met u op
-            voor persoonlijk advies.
-          </p>
+          <div className="flex items-center gap-3 text-white/50">
+            <span>Gemaakt door</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/makers logo/Group 1.png"
+              alt="Rose Vibes Studio"
+              className="h-10 w-auto brightness-0 invert opacity-70"
+            />
+          </div>
         </div>
       </div>
     </footer>
