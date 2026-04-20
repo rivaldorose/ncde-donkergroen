@@ -26,43 +26,43 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-10 lg:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         <div className="lg:col-span-7">
-          <div className="bg-white p-8 lg:p-12 border border-neutral-200 shadow-sm rounded-lg">
-            <h2 className="text-2xl font-bold text-neutral-900 mb-2">Stuur een bericht</h2>
-            <p className="text-neutral-500 mb-10">Alle berichten worden geregistreerd en binnen 3 werkdagen verwerkt.</p>
-            <form action="#" className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <label className="block text-sm font-bold text-neutral-900 uppercase tracking-wider" htmlFor="full_name">Volledige naam</label>
-                  <input className="w-full h-14 bg-white border-2 border-neutral-200 rounded-lg px-4 text-neutral-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="full_name" placeholder="Bijv. Jan de Vries" type="text" />
+          <div className="bg-white p-6 lg:p-8 border border-neutral-200 shadow-sm rounded-lg">
+            <h2 className="text-xl font-semibold text-neutral-900 mb-1">Stuur een bericht</h2>
+            <p className="text-sm text-neutral-500 mb-6">Alle berichten worden geregistreerd en binnen 3 werkdagen verwerkt.</p>
+            <form action="#" className="space-y-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="space-y-1.5">
+                  <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="full_name">Volledige naam</label>
+                  <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="full_name" placeholder="Bijv. Jan de Vries" type="text" />
                 </div>
-                <div className="space-y-2">
-                  <label className="block text-sm font-bold text-neutral-900 uppercase tracking-wider" htmlFor="email">E-mailadres</label>
-                  <input className="w-full h-14 bg-white border-2 border-neutral-200 rounded-lg px-4 text-neutral-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="email" placeholder="naam@organisatie.nl" type="email" />
+                <div className="space-y-1.5">
+                  <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="email">E-mailadres</label>
+                  <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="email" placeholder="naam@organisatie.nl" type="email" />
                 </div>
               </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-bold text-neutral-900 uppercase tracking-wider" htmlFor="organization">Afdeling / Organisatie</label>
-                <input className="w-full h-14 bg-white border-2 border-neutral-200 rounded-lg px-4 text-neutral-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="organization" placeholder="Bijv. Gemeente Amsterdam" type="text" />
+              <div className="space-y-1.5">
+                <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="organization">Afdeling / Organisatie</label>
+                <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="organization" placeholder="Bijv. Gemeente Amsterdam" type="text" />
               </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-bold text-neutral-900 uppercase tracking-wider" htmlFor="subject">Onderwerp</label>
-                <select className="w-full h-14 bg-white border-2 border-neutral-200 rounded-lg px-4 text-neutral-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="subject">
+              <div className="space-y-1.5">
+                <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="subject">Onderwerp</label>
+                <select className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="subject">
                   <option>Informatie</option>
                   <option>Beleid</option>
                   <option>Rapportage</option>
                 </select>
               </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-bold text-neutral-900 uppercase tracking-wider" htmlFor="message">Uw bericht</label>
-                <textarea className="w-full bg-white border-2 border-neutral-200 rounded-lg p-4 text-neutral-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none" id="message" placeholder="Beschrijf uw vraag of verzoek zo gedetailleerd mogelijk..." rows={6}></textarea>
+              <div className="space-y-1.5">
+                <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="message">Uw bericht</label>
+                <textarea className="w-full bg-white border border-neutral-200 rounded-md p-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" id="message" placeholder="Beschrijf uw vraag of verzoek zo gedetailleerd mogelijk..." rows={5}></textarea>
               </div>
-              <div className="flex flex-col sm:flex-row items-center gap-6 pt-4">
-                <button className="w-full sm:w-auto bg-primary text-white px-10 py-4 rounded-lg font-bold text-base hover:bg-primary/90 transition-all shadow-md active:scale-95" type="submit">
+              <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+                <button className="w-full sm:w-auto bg-primary text-white px-6 py-2.5 rounded-md font-semibold text-sm hover:bg-primary/90 transition-all active:scale-95" type="submit">
                   Bericht versturen
                 </button>
-                <p className="text-xs text-neutral-400 max-w-[200px]">
+                <p className="text-xs text-neutral-400 max-w-[240px]">
                   Uw gegevens worden beschermd conform ons privacybeleid.
                 </p>
               </div>
