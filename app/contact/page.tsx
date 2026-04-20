@@ -49,11 +49,9 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <label className="block text-sm font-bold text-neutral-900 uppercase tracking-wider" htmlFor="subject">Onderwerp</label>
                 <select className="w-full h-14 bg-white border-2 border-neutral-200 rounded-lg px-4 text-neutral-900 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="subject">
-                  <option>Algemene informatie</option>
-                  <option>Technische ondersteuning</option>
-                  <option>Beleid &amp; Regelgeving</option>
-                  <option>Samenwerking</option>
-                  <option>Pers &amp; Media</option>
+                  <option>Informatie</option>
+                  <option>Beleid</option>
+                  <option>Rapportage</option>
                 </select>
               </div>
               <div className="space-y-2">
