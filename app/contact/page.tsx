@@ -48,34 +48,52 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
                   <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="full_name">Volledige naam</label>
-                  <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="full_name" placeholder="Bijv. Jan de Vries" type="text" />
+                  <div className="relative">
+                    <span className="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-lg text-neutral-400">person</span>
+                    <input className="w-full h-11 bg-white border border-neutral-200 rounded-md pl-10 pr-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="full_name" placeholder="Bijv. Jan de Vries" type="text" />
+                  </div>
                 </div>
                 <div className="space-y-1.5">
                   <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="email">E-mailadres</label>
-                  <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="email" placeholder="naam@organisatie.nl" type="email" />
+                  <div className="relative">
+                    <span className="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-lg text-neutral-400">mail</span>
+                    <input className="w-full h-11 bg-white border border-neutral-200 rounded-md pl-10 pr-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="email" placeholder="naam@organisatie.nl" type="email" />
+                  </div>
                 </div>
               </div>
               <div className="space-y-1.5">
                 <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="address">Adres</label>
-                <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="address" placeholder="Straat, huisnummer, postcode, plaats" type="text" />
+                <div className="relative">
+                  <span className="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-lg text-neutral-400">home</span>
+                  <input className="w-full h-11 bg-white border border-neutral-200 rounded-md pl-10 pr-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="address" placeholder="Straat, huisnummer, postcode, plaats" type="text" />
+                </div>
               </div>
               <div className="space-y-1.5">
                 <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="organization">
                   Afdeling / Organisatie <span className="font-normal text-neutral-400">(optioneel)</span>
                 </label>
-                <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="organization" placeholder="Bijv. Gemeente Amsterdam" type="text" />
+                <div className="relative">
+                  <span className="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-lg text-neutral-400">apartment</span>
+                  <input className="w-full h-11 bg-white border border-neutral-200 rounded-md pl-10 pr-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="organization" placeholder="Bijv. Gemeente Amsterdam" type="text" />
+                </div>
               </div>
               <div className="space-y-1.5">
                 <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="subject">Onderwerp</label>
-                <select className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="subject">
-                  <option>Informatie</option>
-                  <option>Beleid</option>
-                  <option>Rapportage</option>
-                </select>
+                <div className="relative">
+                  <span className="material-symbols-outlined pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-lg text-neutral-400">label</span>
+                  <select className="w-full h-11 bg-white border border-neutral-200 rounded-md pl-10 pr-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="subject">
+                    <option>Informatie</option>
+                    <option>Beleid</option>
+                    <option>Rapportage</option>
+                  </select>
+                </div>
               </div>
               <div className="space-y-1.5">
                 <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="message">Uw bericht</label>
-                <textarea className="w-full bg-white border border-neutral-200 rounded-md p-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" id="message" placeholder="Beschrijf uw vraag of verzoek zo gedetailleerd mogelijk..." rows={5}></textarea>
+                <div className="relative">
+                  <span className="material-symbols-outlined pointer-events-none absolute left-3 top-3 text-lg text-neutral-400">chat</span>
+                  <textarea className="w-full bg-white border border-neutral-200 rounded-md pl-10 pr-3 py-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none" id="message" placeholder="Beschrijf uw vraag of verzoek zo gedetailleerd mogelijk..." rows={5}></textarea>
+                </div>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
                 <button className="w-full sm:w-auto bg-primary text-white px-6 py-2.5 rounded-md font-semibold text-sm hover:bg-primary/90 transition-all active:scale-95" type="submit">
