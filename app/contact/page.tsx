@@ -86,7 +86,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-neutral-900">Telefonisch contact</h4>
                   <p className="text-neutral-600 mt-1 text-sm leading-relaxed">Ma - Vr, 09:00 - 17:00 uur</p>
-                  <p className="text-primary font-bold mt-2 text-lg">+31 (0) 20 555 0123</p>
+                  <a href="tel:+31852224004" className="text-primary font-bold mt-2 text-lg hover:underline">085 222 4004</a>
                 </div>
               </div>
               <div className="flex gap-6">

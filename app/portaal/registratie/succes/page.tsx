@@ -53,9 +53,9 @@ export default function SuccesPage() {
                   U kunt ons bereiken via{" "}
                   <a
                     className="font-bold hover:underline"
-                    href="tel:0881234567"
+                    href="tel:+31852224004"
                   >
-                    088-123 45 67
+                    085 222 4004
                   </a>{" "}
                   of{" "}
                   <a

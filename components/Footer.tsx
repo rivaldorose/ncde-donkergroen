@@ -28,7 +28,12 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-sm">
                   phone
                 </span>
-                088-XXXXXXX
+                <a
+                  href="tel:+31852224004"
+                  className="transition-colors hover:text-white"
+                >
+                  085 222 4004
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-sm">mail</span>
