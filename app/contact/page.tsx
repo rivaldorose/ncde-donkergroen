@@ -84,7 +84,7 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-bold text-neutral-900">Telefonisch contact</h4>
                   <p className="text-neutral-600 mt-1 text-sm leading-relaxed">Ma - Vr, 09:00 - 17:00 uur</p>
-                  <a href="tel:+31852224004" className="text-primary font-bold mt-2 text-lg hover:underline">085 222 4004</a>
+                  <a href="tel:+31852224003" className="text-primary font-bold mt-2 text-lg hover:underline">085 222 4003</a>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -106,8 +106,8 @@ export default function ContactPage() {
                   <p className="text-neutral-600 mt-1 text-sm leading-relaxed">Bezoek uitsluitend op afspraak.</p>
                   <address className="not-italic text-neutral-900 font-medium mt-2 leading-relaxed">
                     NCDE Hoofdkantoor<br />
-                    Wilhelminaplein 1, Gebouw C<br />
-                    2595 AS Den Haag<br />
+                    Keurmeesterstraat 53<br />
+                    1187 ZX Amstelveen<br />
                     Nederland
                   </address>
                 </div>
@@ -115,6 +115,23 @@ export default function ContactPage() {
             </div>
           </div>
 
+          <div>
+            <h3 className="text-sm font-bold text-primary uppercase tracking-widest mb-6 flex items-center gap-2">
+              <span className="w-8 h-px bg-primary"></span>
+              Locatie
+            </h3>
+            <div className="overflow-hidden rounded-lg border border-neutral-200 shadow-sm">
+              <iframe
+                src="https://www.google.com/maps?q=Keurmeesterstraat+53,+1187+ZX+Amstelveen&output=embed"
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="NCDE locatie - Keurmeesterstraat 53, Amstelveen"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -29,10 +29,10 @@ export default function Footer() {
                   phone
                 </span>
                 <a
-                  href="tel:+31852224004"
+                  href="tel:+31852224003"
                   className="transition-colors hover:text-white"
                 >
-                  085 222 4004
+                  085 222 4003
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -48,7 +48,7 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-sm">
                   location_on
                 </span>
-                Den Haag, Nederland
+                Keurmeesterstraat 53, 1187 ZX Amstelveen
               </li>
             </ul>
           </div>
