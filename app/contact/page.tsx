@@ -32,6 +32,19 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-neutral-900 mb-1">Stuur een bericht</h2>
             <p className="text-sm text-neutral-500 mb-6">Alle berichten worden geregistreerd en binnen 3 werkdagen verwerkt.</p>
             <form action="#" className="space-y-5">
+              <div className="space-y-1.5">
+                <span className="block text-xs font-semibold text-neutral-700 tracking-wide">Ik ben</span>
+                <div className="flex gap-2">
+                  <label className="flex-1 cursor-pointer">
+                    <input type="radio" name="contact_type" value="particulier" defaultChecked className="peer sr-only" />
+                    <span className="flex h-11 items-center justify-center rounded-md border border-neutral-200 text-sm text-neutral-700 transition-all peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">Particulier</span>
+                  </label>
+                  <label className="flex-1 cursor-pointer">
+                    <input type="radio" name="contact_type" value="zakelijk" className="peer sr-only" />
+                    <span className="flex h-11 items-center justify-center rounded-md border border-neutral-200 text-sm text-neutral-700 transition-all peer-checked:border-primary peer-checked:bg-primary peer-checked:text-white">Zakelijk</span>
+                  </label>
+                </div>
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="space-y-1.5">
                   <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="full_name">Volledige naam</label>
@@ -43,7 +56,13 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="space-y-1.5">
-                <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="organization">Afdeling / Organisatie</label>
+                <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="address">Adres</label>
+                <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="address" placeholder="Straat, huisnummer, postcode, plaats" type="text" />
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-xs font-semibold text-neutral-700 tracking-wide" htmlFor="organization">
+                  Afdeling / Organisatie <span className="font-normal text-neutral-400">(optioneel)</span>
+                </label>
                 <input className="w-full h-11 bg-white border border-neutral-200 rounded-md px-3 text-sm text-neutral-900 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" id="organization" placeholder="Bijv. Gemeente Amsterdam" type="text" />
               </div>
               <div className="space-y-1.5">
