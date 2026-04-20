@@ -11,15 +11,15 @@ export default function ContactPage() {
   return (
     <main className="flex-grow">
       <section className="bg-white border-b border-neutral-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-10 lg:py-14">
           <div className="max-w-3xl">
-            <nav className="flex items-center gap-2 text-sm text-neutral-500 mb-6">
+            <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4">
               <Link className="hover:underline" href="/">Home</Link>
               <span className="material-symbols-outlined text-xs">chevron_right</span>
               <span className="text-neutral-900 font-medium">Contact</span>
             </nav>
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-primary tracking-tight mb-8">Neem contact op</h1>
-            <p className="text-xl leading-relaxed text-neutral-600">
+            <h1 className="text-3xl lg:text-4xl font-bold text-primary tracking-tight mb-3">Neem contact op</h1>
+            <p className="text-base leading-relaxed text-neutral-600">
               Het Nederlands Collectief Duurzame Energie (NCDE) biedt ondersteuning en informatie voor particulieren, overheden en strategische partners. Gebruik onderstaande opties om contact op te nemen met onze gespecialiseerde afdelingen.
             </p>
           </div>
