@@ -165,6 +165,14 @@ export default function WerkwijzePage() {
                   Transparante rapportages en benchmarks
                 </span>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="material-symbols-outlined mt-1 text-primary">
+                  verified
+                </span>
+                <span className="text-neutral-700">
+                  Samenwerking met M340-gecertificeerde installateurs
+                </span>
+              </li>
             </ul>
           </div>
           <div className="w-full flex-1">
