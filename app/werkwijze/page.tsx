@@ -18,8 +18,9 @@ export default function WerkwijzePage() {
             Onze Werkwijze
           </h1>
           <p className="mx-auto max-w-2xl text-lg font-normal leading-relaxed text-sage lg:text-xl">
-            NCDE waarborgt kwaliteit en betrouwbaarheid in de energietransitie
-            door middel van onafhankelijk toezicht en specialistische expertise.
+            Het Nederlands Collectief Duurzame Energie (NCDE) waarborgt
+            kwaliteit en betrouwbaarheid in de energietransitie door middel van
+            onafhankelijk toezicht en specialistische expertise.
           </p>
         </div>
       </section>

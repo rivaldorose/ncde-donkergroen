@@ -24,10 +24,10 @@ export default function PartnersPage() {
               Onze Partners &amp; Samenwerkingen
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-slate-600">
-              Het Nederlands Collectief Duurzame Energie werkt nauw samen met
-              regionale netbeheerders en strikt gecertificeerde installateurs om
-              een veilige en betrouwbare energietransitie voor heel Nederland te
-              waarborgen.
+              Het Nederlands Collectief Duurzame Energie (NCDE) werkt nauw
+              samen met regionale netbeheerders en strikt gecertificeerde
+              installateurs om een veilige en betrouwbare energietransitie voor
+              heel Nederland te waarborgen.
             </p>
             <div className="flex gap-4">
               <Link

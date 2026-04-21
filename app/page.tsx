@@ -162,9 +162,10 @@ export default function HomePage() {
               </h2>
               <p className="mb-8 text-lg leading-relaxed text-white/80">
                 In het kader van nationale veiligheid en energiezekerheid
-                adviseert de NCDE burgers om voorbereid te zijn op incidentele
-                stroomuitval. Wij bieden richtlijnen voor noodpakketten en
-                back-up systemen conform landelijke standaarden.
+                adviseert het Nederlands Collectief Duurzame Energie (NCDE)
+                burgers om voorbereid te zijn op incidentele stroomuitval. Wij
+                bieden richtlijnen voor noodpakketten en back-up systemen
+                conform landelijke standaarden.
               </p>
               <ul className="mb-10 space-y-4">
                 <li className="flex items-center gap-3">
