@@ -43,7 +43,7 @@ export default function SalderingsregelingPage() {
               </p>
             </div>
             <div className="hidden lg:col-span-5 lg:block">
-              <div className="rotate-1 rounded-xl bg-white p-2 shadow-xl">
+              <div className="rounded-xl bg-white p-2 shadow-xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP0ZXvakbCAeMwIqubsBPgJMNP4wDSpCNxtmR4d_Er7DHnQ-HU_7rQ9vgsCwpYTTgfgS8-E6-YVpjLoraasTA2nmERtugDpQdXfEkh635O24zXYp1Nb5sHVddYgJApw7LnKuBhCBRXUJXq46r5xy4wiRTubF5EzJ74LCH3gVEkuYmRth1t5QC6Z6dkpo7X6yqpD064e7IWwuMbH1kyV3-ZQcpTRYlUPjLHgue05JgIYoWjyIOi8IdT0k-rwqcJ6FikVmrHDDECSoAX"
