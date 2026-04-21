@@ -120,7 +120,7 @@ export default function RegelingenPage() {
             <span className="text-white">Regelingen</span>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="mb-6 text-4xl font-extrabold leading-tight text-white md:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-white md:text-6xl">
               Regelingen
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-white/85">
@@ -136,7 +136,7 @@ export default function RegelingenPage() {
       <section className="bg-background-light py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Subsidies &amp; Regelingen
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -189,7 +189,7 @@ export default function RegelingenPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Hoe werkt het?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -228,7 +228,7 @@ export default function RegelingenPage() {
             <span className="material-symbols-outlined mb-6 text-5xl text-primary">
               support_agent
             </span>
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Hulp nodig bij uw aanvraag?
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">

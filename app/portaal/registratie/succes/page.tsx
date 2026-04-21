@@ -19,7 +19,7 @@ export default function SuccesPage() {
                 check_circle
               </span>
             </div>
-            <h1 className="px-6 text-3xl font-black text-primary md:text-4xl">
+            <h1 className="px-6 text-3xl font-bold text-primary md:text-4xl">
               Aanvraag succesvol verzonden
             </h1>
             <p className="mt-3 px-6 text-lg font-medium text-accent">

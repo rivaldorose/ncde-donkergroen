@@ -20,7 +20,7 @@ export default function RegistratiePage() {
           }}
         ></div>
         <div className="relative mx-auto flex h-full max-w-5xl flex-col justify-end px-6 pb-8">
-          <h1 className="text-4xl font-black leading-tight tracking-tight text-white md:text-5xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl">
             Word Partner van NCDE
           </h1>
           <p className="mt-2 max-w-2xl text-lg font-medium text-sage">

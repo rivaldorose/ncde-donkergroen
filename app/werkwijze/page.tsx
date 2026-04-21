@@ -14,7 +14,7 @@ export default function WerkwijzePage() {
       <section className="relative overflow-hidden bg-primary py-20 lg:py-32">
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-emerald-900 to-black opacity-20"></div>
         <div className="relative mx-auto max-w-5xl px-6 text-center">
-          <h1 className="mb-6 text-4xl font-black leading-tight tracking-tight text-white lg:text-6xl">
+          <h1 className="mb-6 text-4xl font-bold leading-tight tracking-tight text-white lg:text-6xl">
             Onze Werkwijze
           </h1>
           <p className="mx-auto max-w-2xl text-lg font-normal leading-relaxed text-sage lg:text-xl">
@@ -184,7 +184,7 @@ export default function WerkwijzePage() {
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="rounded-3xl border border-primary/10 bg-accent-soft p-10 text-center lg:p-16">
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Wilt u meer weten over onze aanpak?
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">

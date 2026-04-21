@@ -86,7 +86,7 @@ export default function OplossingenPage() {
               </span>
               <span className="text-primary">Kenniscentrum &amp; Nieuws</span>
             </nav>
-            <h1 className="mb-6 text-4xl font-black leading-tight text-primary md:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-primary md:text-6xl">
               Kenniscentrum &amp; Nieuws
             </h1>
             <p className="text-lg leading-relaxed text-neutral-700 md:text-xl">
@@ -177,7 +177,7 @@ export default function OplossingenPage() {
         {/* CTA */}
         <div className="mt-20">
           <div className="rounded-3xl border border-primary/10 bg-accent-soft p-10 text-center lg:p-16">
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Wilt u op de hoogte blijven?
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">

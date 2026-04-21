@@ -21,7 +21,7 @@ export default function DisclaimerPage() {
             </span>
             <span>Disclaimer</span>
           </nav>
-          <h1 className="mb-4 text-4xl font-black leading-none tracking-tighter text-slate-900 md:text-5xl">
+          <h1 className="mb-4 text-4xl font-bold leading-none tracking-tighter text-slate-900 md:text-5xl">
             Disclaimer
           </h1>
           <p className="text-lg leading-relaxed text-slate-600">
@@ -110,7 +110,7 @@ export default function DisclaimerPage() {
         {/* Document Content */}
         <article className="flex-1 rounded-3xl border border-primary/5 bg-white p-8 shadow-sm md:p-12">
           <div className="max-w-none">
-            <h2 className="mb-8 text-3xl font-black text-slate-900">
+            <h2 className="mb-8 text-3xl font-bold text-slate-900">
               Disclaimer NCDE
             </h2>
             <div className="space-y-10 leading-relaxed text-slate-700">

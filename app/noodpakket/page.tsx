@@ -21,7 +21,7 @@ export default function NoodpakketPage() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
         <div className="relative z-10 max-w-4xl px-6 text-center">
-<h1 className="mb-6 text-4xl font-extrabold leading-tight text-white md:text-6xl">
+<h1 className="mb-6 text-4xl font-bold leading-tight text-white md:text-6xl">
             Voorbereiding op energieonzekerheid
           </h1>
           <p className="mx-auto max-w-2xl text-xl text-slate-100/90">

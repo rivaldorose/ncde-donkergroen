@@ -30,7 +30,7 @@ export default function OverPage() {
               </span>
               <span className="font-medium text-white">Over NCDE</span>
             </nav>
-            <h1 className="mb-6 text-4xl font-black leading-tight text-white lg:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-white lg:text-6xl">
               Wie zijn wij
             </h1>
             <p className="max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
@@ -46,7 +46,7 @@ export default function OverPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Onze missie &amp; visie
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -92,7 +92,7 @@ export default function OverPage() {
       <section className="bg-background-light py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Onze kernwaarden
             </h2>
           </div>
@@ -135,7 +135,7 @@ export default function OverPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Het bestuur
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -199,7 +199,7 @@ export default function OverPage() {
       <section className="bg-background-light py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Onze partners
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -253,7 +253,7 @@ export default function OverPage() {
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="rounded-3xl border border-primary/10 bg-accent-soft p-10 text-center lg:p-16">
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Samen bouwen aan een duurzaam Nederland
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">
