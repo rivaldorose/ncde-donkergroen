@@ -1,44 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { artikelen } from "@/lib/artikelen";
 
 export const metadata: Metadata = {
   title: "Kenniscentrum — NCDE",
   description:
     "Nieuws, analyses en achtergrondartikelen over de Nederlandse energietransitie. Blijf op de hoogte via het kenniscentrum van het Nederlands Collectief Duurzame Energie (NCDE).",
 };
-
-const artikelen = [
-  {
-    slug: "salderingsregeling-2027",
-    category: "Salderingsregeling",
-    title: "Salderingsregeling: wat verandert er vanaf 2027?",
-    excerpt:
-      "De geleidelijke afbouw van de salderingsregeling start in 2027. Wij leggen uit wat dit betekent voor huiseigenaren met zonnepanelen en hoe u zich kunt voorbereiden.",
-    date: "15 april 2026",
-    readTime: "5 min",
-    icon: "wb_sunny",
-  },
-  {
-    slug: "m340-certificering",
-    category: "Certificering",
-    title: "M340-certificering: waarom dit belangrijk is",
-    excerpt:
-      "Een overzicht van de M340-standaard voor installateurs. Hoe waarborgt deze certificering kwaliteit en veiligheid bij duurzame installaties?",
-    date: "8 april 2026",
-    readTime: "4 min",
-    icon: "verified",
-  },
-  {
-    slug: "stroomuitval-voorbereiding",
-    category: "Noodvoorziening",
-    title: "Voorbereid zijn op stroomuitval: de essentie",
-    excerpt:
-      "Door toenemende druk op het energienet wordt noodvoorziening steeds belangrijker. Een praktische gids voor uw huishouden.",
-    date: "1 april 2026",
-    readTime: "6 min",
-    icon: "bolt",
-  },
-];
 
 export default function KenniscentrumPage() {
   return (
@@ -91,9 +59,10 @@ export default function KenniscentrumPage() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {artikelen.map((artikel) => (
-              <article
+              <Link
                 key={artikel.slug}
-                className="flex flex-col rounded-xl border border-primary/5 bg-white p-6 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5"
+                href={`/kenniscentrum/${artikel.slug}`}
+                className="group flex flex-col rounded-xl border border-primary/5 bg-white p-6 shadow-sm transition-all hover:shadow-xl hover:shadow-primary/5"
               >
                 <div className="mb-4 flex items-start justify-between">
                   <span className="material-symbols-outlined text-3xl text-primary">
@@ -123,13 +92,13 @@ export default function KenniscentrumPage() {
                     {artikel.readTime}
                   </span>
                 </div>
-                <span className="mt-auto flex items-center gap-2 text-sm font-semibold text-primary/60">
+                <span className="mt-auto flex items-center gap-2 text-sm font-semibold text-primary">
                   Lees meer
-                  <span className="material-symbols-outlined text-sm">
+                  <span className="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">
                     arrow_forward
                   </span>
                 </span>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
