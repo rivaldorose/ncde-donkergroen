@@ -10,7 +10,7 @@ export default function NoodpakketPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative flex h-[400px] items-center justify-center overflow-hidden bg-primary">
+      <section className="relative flex h-[280px] items-center justify-center overflow-hidden bg-primary">
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -21,28 +21,28 @@ export default function NoodpakketPage() {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
         <div className="relative z-10 max-w-4xl px-6 text-center">
-<h1 className="mb-6 text-4xl font-bold leading-tight text-white md:text-6xl">
+          <h1 className="mb-3 text-3xl font-bold leading-tight text-white md:text-5xl">
             Voorbereiding op energieonzekerheid
           </h1>
-          <p className="mx-auto max-w-2xl text-xl text-slate-100/90">
+          <p className="mx-auto max-w-2xl text-base text-slate-100/90">
             Wees voorbereid op mogelijke stroomuitval en netinstabiliteit. Een
-            goed noodplan helpt u rustig en veilig te blijven tijdens onvoorziene
-            situaties.
+            goed noodplan helpt u rustig en veilig te blijven tijdens
+            onvoorziene situaties.
           </p>
         </div>
       </section>
 
       {/* Checklist Section */}
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <div className="grid gap-12 md:grid-cols-12">
+      <section className="mx-auto max-w-5xl px-6 py-12">
+        <div className="grid gap-8 md:grid-cols-12">
           <div className="md:col-span-7">
-            <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold text-slate-900">
-              <span className="material-symbols-outlined text-4xl text-primary">
+            <h2 className="mb-6 flex items-center gap-3 text-2xl font-bold text-slate-900">
+              <span className="material-symbols-outlined text-3xl text-primary">
                 checklist
               </span>
               Wat te doen bij een stroomuitval?
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
                 <span className="material-symbols-outlined mt-0.5 text-primary">
                   electric_meter
@@ -142,12 +142,12 @@ export default function NoodpakketPage() {
       </section>
 
       {/* Noodpakket Section */}
-      <section className="bg-slate-100 px-6 py-16">
+      <section className="bg-slate-100 px-6 py-12">
         <div className="mx-auto max-w-5xl">
-          <h2 className="mb-4 text-center text-3xl font-bold text-slate-900">
+          <h2 className="mb-3 text-center text-2xl font-bold text-slate-900">
             Het Noodpakket
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-slate-600">
+          <p className="mx-auto mb-8 max-w-2xl text-center text-base text-slate-600">
             Zorg dat u deze essentiële benodigdheden op een vaste, makkelijk
             bereikbare plek in huis bewaart.
           </p>
@@ -225,10 +225,10 @@ export default function NoodpakketPage() {
       </section>
 
       {/* Rol van de Overheid & Netbeheerders */}
-      <section className="mx-auto max-w-5xl px-6 py-20">
-        <div className="flex flex-col items-center gap-12 md:flex-row">
+      <section className="mx-auto max-w-5xl px-6 py-14">
+        <div className="flex flex-col items-center gap-8 md:flex-row">
           <div className="flex-1">
-            <h2 className="mb-6 text-3xl font-bold text-slate-900">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900">
               Rol van de Overheid &amp; Netbeheerders
             </h2>
             <div>

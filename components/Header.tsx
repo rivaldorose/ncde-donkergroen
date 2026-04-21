@@ -8,6 +8,7 @@ const navItems = [
   { href: "/noodpakket", label: "Noodpakket" },
   { href: "/oplossingen", label: "Oplossingen" },
   { href: "/regelingen", label: "Regelingen" },
+  { href: "/kenniscentrum", label: "Kenniscentrum" },
   { href: "/partners", label: "Partners" },
 ];
 

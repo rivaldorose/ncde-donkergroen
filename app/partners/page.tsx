@@ -280,7 +280,7 @@ export default function PartnersPage() {
       {/* CTA Section */}
       <section className="px-6 py-20 text-center md:px-20 lg:px-40">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-8">
-          <h2 className="text-4xl font-bold">Wilt u ook partner worden?</h2>
+          <h2 className="text-4xl font-bold">Wilt u ook Partner worden?</h2>
           <p className="text-lg text-slate-600">
             Wij zijn altijd op zoek naar kwalitatieve installatiebedrijven en
             innovatieve partners die willen bijdragen aan een duurzaam

@@ -98,7 +98,7 @@ export default function RegelingenPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative flex min-h-[400px] items-center overflow-hidden bg-primary py-20">
+      <section className="relative flex min-h-[280px] items-center overflow-hidden bg-primary py-14">
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -110,7 +110,7 @@ export default function RegelingenPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
         <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <nav className="mb-8 flex items-center gap-2 text-sm text-white/60">
+          <nav className="mb-5 flex items-center gap-2 text-xs text-white/60">
             <Link href="/" className="transition-colors hover:text-white">
               Home
             </Link>
@@ -120,10 +120,10 @@ export default function RegelingenPage() {
             <span className="text-white">Regelingen</span>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="mb-6 text-4xl font-bold leading-tight text-white md:text-6xl">
+            <h1 className="mb-3 text-3xl font-bold leading-tight text-white md:text-5xl">
               Regelingen
             </h1>
-            <p className="max-w-2xl text-xl leading-relaxed text-white/85">
+            <p className="max-w-2xl text-base leading-relaxed text-white/85">
               Een overzicht van de beschikbare subsidies en regelingen voor
               duurzame energie in Nederland. Informeer u over de mogelijkheden
               voor uw woning of onderneming.
@@ -133,13 +133,13 @@ export default function RegelingenPage() {
       </section>
 
       {/* Subsidies Grid */}
-      <section className="bg-background-light py-24">
+      <section className="bg-background-light py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-primary lg:text-3xl">
               Subsidies &amp; Regelingen
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+            <p className="mx-auto max-w-2xl text-base text-neutral-600">
               De Nederlandse overheid biedt diverse financi&euml;le regelingen om
               de energietransitie te versnellen. Hieronder vindt u de
               belangrijkste subsidies op een rij.
@@ -186,10 +186,10 @@ export default function RegelingenPage() {
       </section>
 
       {/* Hoe werkt het? */}
-      <section className="bg-white py-24">
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
+          <div className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-primary lg:text-3xl">
               Hoe werkt het?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
