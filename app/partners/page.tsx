@@ -20,7 +20,7 @@ export default function PartnersPage() {
               </span>{" "}
               Samenwerking
             </div>
-            <h1 className="text-4xl font-black leading-tight tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
               Onze Partners &amp; Samenwerkingen
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-slate-600">
