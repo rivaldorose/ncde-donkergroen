@@ -32,6 +32,11 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-neutral-900 mb-1">Stuur een bericht</h2>
             <p className="text-sm text-neutral-500 mb-6">Alle berichten worden geregistreerd en binnen 3 werkdagen verwerkt.</p>
             <form action="#" className="space-y-5">
+              {/* Honeypot — bots fill this, real users don't see it */}
+              <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden" tabIndex={-1}>
+                <label htmlFor="website">Website</label>
+                <input id="website" name="website" type="text" autoComplete="off" tabIndex={-1} />
+              </div>
               <div className="space-y-1.5">
                 <span className="block text-xs font-semibold text-neutral-700 tracking-wide">Ik ben</span>
                 <div className="flex gap-2">
