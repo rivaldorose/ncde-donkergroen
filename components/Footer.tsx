@@ -107,6 +107,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/kenniscentrum"
+                  className="transition-colors hover:text-white"
+                >
+                  Kenniscentrum
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/partners"
                   className="transition-colors hover:text-white"
                 >
