@@ -43,7 +43,7 @@ export default function SalderingsregelingPage() {
               </p>
             </div>
             <div className="hidden lg:col-span-5 lg:block">
-              <div className="rotate-1 rounded-xl bg-white p-2 shadow-xl">
+              <div className="rounded-xl bg-white p-2 shadow-xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP0ZXvakbCAeMwIqubsBPgJMNP4wDSpCNxtmR4d_Er7DHnQ-HU_7rQ9vgsCwpYTTgfgS8-E6-YVpjLoraasTA2nmERtugDpQdXfEkh635O24zXYp1Nb5sHVddYgJApw7LnKuBhCBRXUJXq46r5xy4wiRTubF5EzJ74LCH3gVEkuYmRth1t5QC6Z6dkpo7X6yqpD064e7IWwuMbH1kyV3-ZQcpTRYlUPjLHgue05JgIYoWjyIOi8IdT0k-rwqcJ6FikVmrHDDECSoAX"
@@ -80,13 +80,16 @@ export default function SalderingsregelingPage() {
                   heeft afgenomen. Dit &apos;wegstrepen&apos; noemen we
                   salderen. U betaalt dus alleen voor het netto-verbruik.
                 </p>
-                <div className="my-6 rounded-lg border-l-4 border-primary bg-background-light p-6">
-                  <h4 className="mb-2 font-bold text-primary">Wist u dat?</h4>
-                  <p className="text-sm">
-                    Bij salderen krijgt u voor uw teruggeleverde stroom exact
-                    hetzelfde tarief als u betaalt voor de afgenomen stroom,
-                    inclusief energiebelasting en btw.
-                  </p>
+                <div className="my-4 flex gap-3 rounded-md border-l-2 border-primary/40 bg-primary/5 px-4 py-3">
+                  <span className="material-symbols-outlined mt-0.5 text-base text-primary/70">lightbulb</span>
+                  <div>
+                    <span className="mr-2 text-xs font-semibold uppercase tracking-wide text-primary/70">Tip</span>
+                    <span className="text-sm text-slate-600">
+                      Bij salderen krijgt u voor uw teruggeleverde stroom exact
+                      hetzelfde tarief als u betaalt voor de afgenomen stroom,
+                      inclusief energiebelasting en btw.
+                    </span>
+                  </div>
                 </div>
               </div>
             </article>
