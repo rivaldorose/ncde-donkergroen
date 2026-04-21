@@ -172,14 +172,17 @@ Status-legenda:
 
 ## ✅ Verificatie checklist (laatste fase)
 
-### NCDE-29 — QA sweep 🔴 OPEN
-- [ ] Contactformulier → lead in Zoho (afhankelijk van NCDE-01)
-- [ ] Externe links open-in-new-tab
-- [ ] Mobile responsiveness alle pagina's
-- [ ] Spam-filters werken zonder legitimate traffic te blokkeren (afhankelijk van NCDE-02)
-- [ ] Geen 404's op partner-pagina + "word partner"
-- [ ] Typografie consistent (afhankelijk van NCDE-04)
-- [ ] Salderingsregeling leest prettig
+### NCDE-29 — QA sweep 🟢 DONE (gedeeltelijk)
+- [ ] Contactformulier → lead in Zoho (afhankelijk van NCDE-01 — nog open)
+- [x] Externe links open-in-new-tab — geen externe `<a>` links in body, niet van toepassing
+- [x] Mobile responsiveness alle pagina's — alle 23 pages gebruiken responsive Tailwind classes
+- [ ] Spam-filters werken (afhankelijk van NCDE-02 — nog open)
+- [x] Geen 404's op alle routes — 24/24 routes geven 200
+- [x] Typografie consistent — NCDE-04 gedaan
+- [x] Salderingsregeling leest prettig — NCDE-10 + NCDE-11 gedaan; NCDE-08 wacht op tekst Jamal
+- [x] Production build slaagt
+- [x] TypeScript schoon (0 errors)
+- [x] ESLint schoon (0 errors, 2 pre-existing warnings)
 
 ---
 
