@@ -20,7 +20,7 @@ export default function HomePage() {
               </span>{" "}
               Offici&euml;le Informatie
             </div>
-            <h1 className="mb-6 text-4xl font-black leading-tight text-white lg:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-white lg:text-6xl">
               Uw gids voor duurzame energie in Nederland
             </h1>
             <p className="mb-10 text-lg leading-relaxed text-white/85 lg:text-xl">
@@ -92,7 +92,7 @@ export default function HomePage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Wat verandert er?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-600">
@@ -157,14 +157,15 @@ export default function HomePage() {
                 </span>{" "}
                 Overheidsrichtlijnen
               </div>
-              <h2 className="mb-6 text-3xl font-black leading-tight lg:text-5xl">
+              <h2 className="mb-6 text-3xl font-bold leading-tight lg:text-5xl">
                 Voorbereiding op energieonzekerheid
               </h2>
               <p className="mb-8 text-lg leading-relaxed text-white/80">
                 In het kader van nationale veiligheid en energiezekerheid
-                adviseert de NCDE burgers om voorbereid te zijn op incidentele
-                stroomuitval. Wij bieden richtlijnen voor noodpakketten en
-                back-up systemen conform landelijke standaarden.
+                adviseert het Nederlands Collectief Duurzame Energie (NCDE)
+                burgers om voorbereid te zijn op incidentele stroomuitval. Wij
+                bieden richtlijnen voor noodpakketten en back-up systemen
+                conform landelijke standaarden.
               </p>
               <ul className="mb-10 space-y-4">
                 <li className="flex items-center gap-3">
@@ -212,7 +213,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 flex items-end justify-between">
             <div className="max-w-2xl">
-              <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+              <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
                 Duurzame Oplossingen
               </h2>
               <p className="text-lg text-slate-600">
@@ -320,7 +321,7 @@ export default function HomePage() {
                 </span>{" "}
                 Over NCDE
               </div>
-              <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+              <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
                 Wie zijn wij
               </h2>
               <p className="mb-6 text-lg leading-relaxed text-neutral-600">
@@ -374,7 +375,7 @@ export default function HomePage() {
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-primary/10 bg-accent-soft p-10 text-center lg:p-16">
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Wilt u weten wat dit voor u betekent?
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">

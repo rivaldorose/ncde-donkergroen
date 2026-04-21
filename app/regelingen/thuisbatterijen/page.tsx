@@ -31,7 +31,7 @@ export default function ThuisbatterijenPage() {
       <section className="px-4 py-8 md:px-10 lg:px-0">
         <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
-            <h1 className="text-4xl font-black leading-tight tracking-tight text-slate-900 lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 lg:text-6xl">
               Thuisbatterijen: Slimme opslag voor eigen verbruik
             </h1>
             <p className="text-lg leading-relaxed text-slate-600">
@@ -286,7 +286,7 @@ export default function ThuisbatterijenPage() {
         <div className="mx-auto max-w-[1200px]">
           <div className="relative overflow-hidden rounded-3xl bg-primary p-10 text-center text-white md:p-20">
             <div className="relative z-10">
-              <h2 className="mb-6 text-4xl font-black">Advies nodig?</h2>
+              <h2 className="mb-6 text-4xl font-bold">Advies nodig?</h2>
               <p className="mx-auto mb-10 max-w-xl text-lg text-sage opacity-90">
                 Onze adviseurs helpen u graag bij het berekenen van de optimale
                 batterijcapaciteit voor uw persoonlijke situatie. Geheel
@@ -294,7 +294,7 @@ export default function ThuisbatterijenPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-block rounded-xl bg-white px-10 py-5 text-lg font-black text-primary transition-all hover:bg-sage"
+                className="inline-block rounded-xl bg-white px-10 py-5 text-lg font-bold text-primary transition-all hover:bg-sage"
               >
                 Plan een adviesgesprek
               </Link>

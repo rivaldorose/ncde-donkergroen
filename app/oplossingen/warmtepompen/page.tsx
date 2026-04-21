@@ -36,7 +36,7 @@ export default function WarmtepompenPage() {
               </span>
               <span className="font-medium text-white">Warmtepompen</span>
             </nav>
-            <h1 className="mb-6 text-4xl font-black leading-tight text-white lg:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold leading-tight text-white lg:text-6xl">
               Warmtepompen
             </h1>
             <p className="max-w-2xl text-lg leading-relaxed text-white/80 lg:text-xl">
@@ -51,7 +51,7 @@ export default function WarmtepompenPage() {
       {/* Introductie */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
-          <h2 className="mb-8 text-3xl font-black text-primary">
+          <h2 className="mb-8 text-3xl font-bold text-primary">
             Wat is een warmtepomp?
           </h2>
           <p className="mb-6 text-lg leading-relaxed text-neutral-700">
@@ -75,7 +75,7 @@ export default function WarmtepompenPage() {
       <section className="bg-background-light py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Types warmtepompen
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -130,7 +130,7 @@ export default function WarmtepompenPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="flex flex-col items-center gap-16 lg:flex-row">
             <div className="lg:w-1/2">
-              <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+              <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
                 Voordelen van een warmtepomp
               </h2>
               <ul className="space-y-6">
@@ -200,7 +200,7 @@ export default function WarmtepompenPage() {
       {/* Subsidies */}
       <section className="bg-background-light py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-12">
-          <h2 className="mb-8 text-3xl font-black text-primary">
+          <h2 className="mb-8 text-3xl font-bold text-primary">
             Subsidies &amp; regelingen
           </h2>
           <p className="mb-6 text-lg leading-relaxed text-neutral-700">
@@ -231,7 +231,7 @@ export default function WarmtepompenPage() {
       <section className="py-20">
         <div className="mx-auto max-w-5xl px-6 lg:px-12">
           <div className="rounded-3xl border border-primary/10 bg-accent-soft p-10 text-center lg:p-16">
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Benieuwd of een warmtepomp bij uw woning past?
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">

@@ -138,7 +138,7 @@ export default function SEEHPage() {
             <span className="mb-4 inline-block rounded-full bg-white/20 px-4 py-1.5 text-xs font-bold text-white">
               Nieuw 2026
             </span>
-            <h1 className="mb-4 text-4xl font-extrabold leading-tight text-white md:text-6xl">
+            <h1 className="mb-4 text-4xl font-bold leading-tight text-white md:text-6xl">
               SEEH
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed text-white/85">
@@ -171,7 +171,7 @@ export default function SEEHPage() {
 
             {/* Intro Text */}
             <div className="flex flex-col justify-center">
-              <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+              <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
                 Wat is de SEEH?
               </h2>
               <p className="mb-4 leading-relaxed text-neutral-600">
@@ -196,7 +196,7 @@ export default function SEEHPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Welke maatregelen?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -241,7 +241,7 @@ export default function SEEHPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+              <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
                 Voorwaarden
               </h2>
               <p className="text-lg text-neutral-600">
@@ -270,7 +270,7 @@ export default function SEEHPage() {
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold text-primary lg:text-4xl">
               Hoe aanvragen?
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-neutral-600">
@@ -310,7 +310,7 @@ export default function SEEHPage() {
             <span className="material-symbols-outlined mb-6 text-5xl text-primary">
               support_agent
             </span>
-            <h2 className="mb-6 text-3xl font-black text-primary lg:text-4xl">
+            <h2 className="mb-6 text-3xl font-bold text-primary lg:text-4xl">
               Hulp nodig?
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-primary/70">

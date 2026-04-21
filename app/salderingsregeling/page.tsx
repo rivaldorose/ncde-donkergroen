@@ -33,7 +33,7 @@ export default function SalderingsregelingPage() {
               <span className="w-fit rounded bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">
                 Informatie Dossier
               </span>
-              <h1 className="text-4xl font-black leading-[1.1] tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
                 Salderingsregeling: Alles wat u moet weten
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-600 md:text-xl">
@@ -96,8 +96,7 @@ export default function SalderingsregelingPage() {
 
             {/* Voorgenomen wijzigingen */}
             <article className="flex flex-col gap-4">
-              <h2 className="flex items-center gap-3 text-2xl font-bold text-slate-900">
-                <span className="h-1 w-8 rounded-full bg-primary"></span>
+              <h2 className="text-2xl font-bold text-slate-900">
                 De voorgenomen wijzigingen
               </h2>
               <p className="text-slate-700">
@@ -138,8 +137,7 @@ export default function SalderingsregelingPage() {
 
             {/* Wat betekent dit voor u? */}
             <article className="flex flex-col gap-4">
-              <h2 className="flex items-center gap-3 text-2xl font-bold text-slate-900">
-                <span className="h-1 w-8 rounded-full bg-primary"></span>
+              <h2 className="text-2xl font-bold text-slate-900">
                 Wat betekent dit voor u?
               </h2>
               <p className="text-slate-700">
