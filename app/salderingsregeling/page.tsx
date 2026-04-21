@@ -96,8 +96,7 @@ export default function SalderingsregelingPage() {
 
             {/* Voorgenomen wijzigingen */}
             <article className="flex flex-col gap-4">
-              <h2 className="flex items-center gap-3 text-2xl font-bold text-slate-900">
-                <span className="h-1 w-8 rounded-full bg-primary"></span>
+              <h2 className="text-2xl font-bold text-slate-900">
                 De voorgenomen wijzigingen
               </h2>
               <p className="text-slate-700">
@@ -138,8 +137,7 @@ export default function SalderingsregelingPage() {
 
             {/* Wat betekent dit voor u? */}
             <article className="flex flex-col gap-4">
-              <h2 className="flex items-center gap-3 text-2xl font-bold text-slate-900">
-                <span className="h-1 w-8 rounded-full bg-primary"></span>
+              <h2 className="text-2xl font-bold text-slate-900">
                 Wat betekent dit voor u?
               </h2>
               <p className="text-slate-700">
